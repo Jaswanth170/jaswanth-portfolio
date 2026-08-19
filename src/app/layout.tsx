@@ -56,6 +56,9 @@ export const metadata: Metadata = {
     description: portfolioData.seo.description,
     images: ["/images/jaswanth-profile.jpg"],
   },
+  verification: {
+    google: "qEttwZ5IZ-n_eYgacQkTCx4u1cs1Nu8tAne0fDZ-UJs",
+  },
 };
 
 export default function RootLayout({
