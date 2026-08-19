@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-geist-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: #08090A;
+    color: #F5F5F5;
+  }
+
+  body {
+    background-color: #08090A;
+    color: #F5F5F5;
+    font-family: var(--font-geist-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus outline for accessibility */
+  :focus-visible {
+    outline: 2px solid #4F8CFF;
+    outline-offset: 2px;
+  }
+
+  /* Custom scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #08090A;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1C2026;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2D333E;
+  }
+
+  /* Selection highlight */
+  ::selection {
+    background: rgba(79, 140, 255, 0.25);
+    color: #FFFFFF;
+  }
+}
+
+/* Background Subtle Radial Lighting */
+.bg-radial-grid {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(79, 140, 255, 0.07) 0%, transparent 65%),
+    radial-gradient(circle at 100% 50%, rgba(79, 140, 255, 0.03) 0%, transparent 40%);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Reduced Motion Fallbacks */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
