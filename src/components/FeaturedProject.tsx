@@ -2,13 +2,37 @@
 
 import React from "react";
 import Link from "next/link";
-import { portfolioData } from "@/data/portfolioData";
-import { ArrowUpRight, CheckCircle2, FlaskConical, Github, Bot, Workflow, Sparkles } from "lucide-react";
+import { portfolioData, ProjectCaseStudy } from "@/data/portfolioData";
+import { ArrowUpRight, CheckCircle2, Clock, FlaskConical, Github, Workflow, Sparkles } from "lucide-react";
 
 export const FeaturedProject: React.FC = () => {
   const { projects } = portfolioData;
   const leadGen = projects.find((p) => p.slug === "ai-lead-generation")!;
   const contentAuto = projects.find((p) => p.slug === "ai-content-automation")!;
+
+  const getStatusBadge = (status: ProjectCaseStudy["status"]) => {
+    switch (status) {
+      case "BUILT":
+        return (
+          <span className="px-2.5 py-1 text-[11px] font-mono font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full flex items-center gap-1">
+            <CheckCircle2 className="w-3 h-3" /> Built
+          </span>
+        );
+      case "EXPERIMENT":
+        return (
+          <span className="px-2.5 py-1 text-[11px] font-mono font-semibold text-accent bg-accent/10 border border-accent/20 rounded-full flex items-center gap-1">
+            <FlaskConical className="w-3 h-3" /> Experiment
+          </span>
+        );
+      case "IN PROGRESS":
+      default:
+        return (
+          <span className="px-2.5 py-1 text-[11px] font-mono font-semibold text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full flex items-center gap-1">
+            <Clock className="w-3 h-3" /> In Progress
+          </span>
+        );
+    }
+  };
 
   return (
     <section id="featured-work" className="py-24 bg-surface/30 relative border-y border-white/[0.06]">
@@ -25,7 +49,7 @@ export const FeaturedProject: React.FC = () => {
             </h2>
           </div>
           <p className="text-sm text-secondary max-w-md leading-relaxed">
-            Real software systems engineered with intelligent models, n8n workflows, tool calling, and structured APIs.
+            AI engineering projects focused on intelligent models, n8n workflows, tool calling, and structured APIs.
           </p>
         </div>
 
@@ -39,9 +63,7 @@ export const FeaturedProject: React.FC = () => {
                 <span className="text-xs font-mono text-accent font-bold tracking-widest uppercase flex items-center gap-1.5">
                   <Workflow className="w-4 h-4" /> 01 · AUTOMATION
                 </span>
-                <span className="px-2.5 py-1 text-[11px] font-mono font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> Built
-                </span>
+                {getStatusBadge(leadGen.status)}
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">
@@ -99,9 +121,7 @@ export const FeaturedProject: React.FC = () => {
                 <span className="text-xs font-mono text-accent font-bold tracking-widest uppercase flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4" /> 02 · LLM APPLICATION
                 </span>
-                <span className="px-2.5 py-1 text-[11px] font-mono font-semibold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full flex items-center gap-1">
-                  <CheckCircle2 className="w-3 h-3" /> Built
-                </span>
+                {getStatusBadge(contentAuto.status)}
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-primary mb-3 group-hover:text-accent transition-colors">

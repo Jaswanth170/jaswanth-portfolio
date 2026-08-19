@@ -152,18 +152,18 @@ export const portfolioData: PortfolioData = {
       number: "CASE STUDY / 01",
       title: "AI Lead Generation System",
       category: "AUTOMATION",
-      oneLiner: "Automated lead capture, qualification, and routing using n8n and AI.",
+      oneLiner: "AI-powered lead generation and qualification workflow currently in progress.",
       problem:
         "Manual lead processing, qualification, and routing is repetitive and causes delays in response times.",
       approach:
-        "Engineered an automated n8n pipeline integrated with AI models to capture incoming leads via webhooks, evaluate lead fit, and route qualified prospects.",
+        "Designing an automated workflow connecting lead capture, AI processing, qualification, and routing using n8n and AI models.",
       technologies: ["n8n", "AI", "Google APIs", "Webhooks"],
-      status: "BUILT",
+      status: "IN PROGRESS",
       evidence: {},
       highlights: [
-        "Automated webhook capture from custom lead forms",
+        "Automated webhook capture from form endpoints",
         "LLM-based lead scoring against qualification criteria",
-        "Instant notification dispatch to team endpoints",
+        "Notification dispatch to team endpoints",
       ],
       learned: [
         "Reliable workflow automation depends as much on robust error handling and webhook retry logic as it does on prompt quality.",
@@ -176,18 +176,18 @@ export const portfolioData: PortfolioData = {
       number: "CASE STUDY / 02",
       title: "AI Content Automation System",
       category: "LLM",
-      oneLiner: "Automated pipeline turning unstructured notes into platform-ready content.",
+      oneLiner: "LLM-powered content automation workflow currently in progress.",
       problem:
         "Repurposing raw notes into structured, platform-formatted content requires time-consuming manual editing.",
       approach:
-        "Developed an end-to-end content processing pipeline using LLM templates that transforms unstructured ideas into polished, platform-ready copy.",
+        "Exploring automated content generation and structured publishing workflows using LLMs and automation templates.",
       technologies: ["LLMs", "n8n", "Automation", "APIs"],
-      status: "BUILT",
+      status: "IN PROGRESS",
       evidence: {},
       highlights: [
         "Multi-platform formatting pipelines",
         "Automated outline-to-draft generation",
-        "Custom tone and style enforcement",
+        "Tone and style enforcement templates",
       ],
       learned: [
         "Modular prompt chaining creates far cleaner, less generic content outputs than attempting a single mega-prompt.",
@@ -200,11 +200,11 @@ export const portfolioData: PortfolioData = {
       number: "CASE STUDY / 03",
       title: "AI Agent Systems",
       category: "AGENTS",
-      oneLiner: "Experimental Python agent frameworks exploring autonomous tool execution.",
+      oneLiner: "Experimental Python agent frameworks exploring autonomous tool execution and MCP protocol.",
       problem:
         "Standard LLMs cannot take direct action or interact dynamically with external software tools and APIs.",
       approach:
-        "Built experimental Python agent frameworks leveraging the Model Context Protocol (MCP) to allow models to reason, select tools, and execute environment tasks.",
+        "Prototyping experimental Python agent frameworks leveraging the Model Context Protocol (MCP) to allow models to reason, select tools, and execute environment tasks.",
       technologies: ["Python", "LLMs", "Tools", "MCP"],
       status: "EXPERIMENT",
       evidence: {},
@@ -256,24 +256,24 @@ export const portfolioData: PortfolioData = {
   currentlyBuilding: [
     {
       id: "01",
-      name: "AI AGENTS",
-      description: "Tool-using autonomous reasoning systems (MCP Protocol)",
-      status: "EXPLORING",
-      linkUrl: "/projects/ai-agent-systems",
-    },
-    {
-      id: "02",
-      name: "AI AUTOMATION",
-      description: "Intelligent business workflows & n8n pipeline integrations",
-      status: "ACTIVE",
+      name: "AI Lead Generation",
+      description: "AI-powered lead capture, qualification, and routing workflow",
+      status: "BUILDING",
       linkUrl: "/projects/ai-lead-generation",
     },
     {
-      id: "03",
-      name: "LLM APPLICATIONS",
-      description: "Retrieval-augmented models & structured data processing",
-      status: "ACTIVE",
+      id: "02",
+      name: "AI Content Automation",
+      description: "LLM-powered content transformation & publishing workflow",
+      status: "BUILDING",
       linkUrl: "/projects/ai-content-automation",
+    },
+    {
+      id: "03",
+      name: "AI Agent Systems",
+      description: "Tool-using autonomous reasoning systems (MCP Protocol)",
+      status: "EXPLORING",
+      linkUrl: "/projects/ai-agent-systems",
     },
   ],
 
@@ -304,9 +304,9 @@ export const portfolioData: PortfolioData = {
   ],
 
   seo: {
-    title: "Jaswanth ST — AI/ML Engineer & AI Builder",
+    title: "Jaswanth ST — AI/ML Engineer & Automation Engineer",
     description:
-      "Jaswanth ST is an AI/ML Engineer building AI agents, automation systems, LLM applications, and practical AI-powered products.",
+      "Jaswanth ST is an AI/ML Engineer and Automation Engineer building practical AI systems, LLM applications, and workflow automations.",
     ogTitle: "Jaswanth ST — Building the Future With AI",
     ogDescription:
       "AI/ML Engineer · AI Builder · AI Agents · Automation · LLM Applications",

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { portfolioData } from "@/data/portfolioData";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, CheckCircle2, Bot, Wrench, Play, Github } from "lucide-react";
+import { ArrowLeft, FlaskConical, Bot, Wrench, Play, Github, CheckCircle2 } from "lucide-react";
 
 export default function AgentSystemsCaseStudyPage() {
   const project = portfolioData.projects.find((p) => p.slug === "ai-agent-systems")!;
@@ -31,7 +31,7 @@ export default function AgentSystemsCaseStudyPage() {
               {project.category}
             </span>
             <span className="px-3 py-1 text-xs font-mono text-accent bg-accent/10 border border-accent/20 rounded-full flex items-center gap-1">
-              <CheckCircle2 className="w-3.5 h-3.5" /> STATUS: {project.status}
+              <FlaskConical className="w-3.5 h-3.5" /> STATUS: {project.status}
             </span>
           </div>
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { portfolioData } from "@/data/portfolioData";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, CheckCircle2, ArrowUpRight, Filter, Sparkles, Database, Github } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Clock, ArrowUpRight, Filter, Sparkles, Database, Github } from "lucide-react";
 
 export default function LeadGenCaseStudyPage() {
   const project = portfolioData.projects.find((p) => p.slug === "ai-lead-generation")!;
@@ -30,8 +30,8 @@ export default function LeadGenCaseStudyPage() {
             <span className="px-3 py-1 text-xs font-mono font-semibold text-accent bg-accent/10 border border-accent/20 rounded-full">
               {project.category}
             </span>
-            <span className="px-3 py-1 text-xs font-mono text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 rounded-full flex items-center gap-1">
-              <CheckCircle2 className="w-3.5 h-3.5" /> STATUS: {project.status}
+            <span className="px-3 py-1 text-xs font-mono text-amber-400 bg-amber-400/10 border border-amber-400/20 rounded-full flex items-center gap-1">
+              <Clock className="w-3.5 h-3.5" /> STATUS: {project.status}
             </span>
           </div>
 

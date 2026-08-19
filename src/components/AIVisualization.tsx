@@ -27,7 +27,7 @@ export const AIVisualization: React.FC = () => {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
           </span>
           <span className="text-[11px] font-mono text-accent tracking-widest uppercase">
-            LIVE CORE
+            SYSTEM STATUS — BUILDING
           </span>
         </div>
       </div>
