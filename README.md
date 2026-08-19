@@ -1,71 +1,51 @@
-# Jaswanth ST — AI/ML Engineer Portfolio
+# Jaswanth ST — Portfolio
 
-> Personal portfolio showcasing my work in Artificial Intelligence, Machine Learning, Generative AI, and software engineering.
+Personal portfolio website for **Jaswanth ST**, focused on Artificial Intelligence, Machine Learning, Generative AI, and software engineering.
 
-## About
+## Purpose
 
-I’m Jaswanth ST, an AI/ML Engineer focused on building practical, production-oriented AI applications.
-
-My interests include:
-
-- Artificial Intelligence & Machine Learning
-- Generative AI and LLM applications
-- Retrieval-Augmented Generation (RAG)
-- AI agents and automation
-- Python backend engineering
-- Modern web application development
-
-## Portfolio
-
-🌐 **Website:** [Jaswanth ST Portfolio](https://github.com/Jaswanth170/jaswanth-portfolio)
+This repository contains the source code for my personal portfolio and acts as the central presentation layer for my projects, technical skills, and professional profile.
 
 ## Tech Stack
 
-**Languages**  
-Python · TypeScript · JavaScript
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
 
-**AI / ML**  
-Machine Learning · Deep Learning · Generative AI · LLMs · RAG
+## What the Portfolio Highlights
 
-**Backend**  
-FastAPI · Flask · REST APIs
+- AI/ML projects
+- Generative AI and LLM interests
+- Software engineering skills
+- Selected technical work
+- Professional contact and profile information
 
-**Frontend**  
-React · Next.js · Tailwind CSS
+## Development
 
-**Tools & Engineering**  
-Git · GitHub · Docker · Linux
+```bash
+npm install
+npm run dev
+```
 
-## Selected Work
+Build and run production:
 
-### Portfolio Website
+```bash
+npm run build
+npm start
+```
 
-A modern personal portfolio built with Next.js, React, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
+## Repository Structure
 
-### Computer Vision
+The application follows a standard Next.js project structure with reusable components, application routes, styling, and static assets.
 
-Face emotion detection using convolutional neural networks, demonstrating practical deep-learning and computer-vision fundamentals.
+## Professional Profile
 
-### Recommendation Systems
+- GitHub: https://github.com/Jaswanth170
+- LinkedIn: https://www.linkedin.com/in/jaswanth-st/
 
-A movie recommendation system demonstrating machine-learning based recommendation concepts and application development.
+## Author
 
-## Engineering Philosophy
-
-I prefer learning by building real systems. My goal is to turn AI concepts into useful software with clear architecture, reliable APIs, good documentation, and a strong user experience.
-
-## Current Focus
-
-- Building production-oriented AI applications
-- Deepening LLM and RAG engineering skills
-- Learning agentic AI and AI automation patterns
-- Improving software architecture and deployment practices
-
-## Connect
-
-- GitHub: [@Jaswanth170](https://github.com/Jaswanth170)
-- LinkedIn: [Jaswanth ST](https://www.linkedin.com/in/jaswanth-st/)
-
----
-
-*This repository contains my personal portfolio and is continuously improved as I build and learn.*
+**Jaswanth ST**
