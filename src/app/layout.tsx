@@ -2,13 +2,17 @@ import type { Metadata } from "next";
 import { portfolioData } from "@/data/portfolioData";
 import "./globals.css";
 
+const baseUrl = "https://jaswanth-portfolio-psi.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: portfolioData.seo.title,
   description: portfolioData.seo.description,
   keywords: [
     "Jaswanth ST",
     "AI Engineer",
     "ML Engineer",
+    "Automation Engineer",
     "AI Builder",
     "AI Automation",
     "AI Agents",
@@ -16,17 +20,41 @@ export const metadata: Metadata = {
     "n8n Automation",
   ],
   authors: [{ name: portfolioData.personal.name }],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: portfolioData.seo.ogTitle,
-    description: portfolioData.seo.ogDescription,
-    type: "website",
-    locale: "en_US",
+    title: portfolioData.seo.title,
+    description: portfolioData.seo.description,
+    url: `${baseUrl}/`,
     siteName: "Jaswanth ST Portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/jaswanth-profile.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "Jaswanth ST — AI/ML Engineer & Automation Engineer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: portfolioData.seo.ogTitle,
-    description: portfolioData.seo.ogDescription,
+    title: portfolioData.seo.title,
+    description: portfolioData.seo.description,
+    images: ["/images/jaswanth-profile.jpg"],
   },
 };
 
